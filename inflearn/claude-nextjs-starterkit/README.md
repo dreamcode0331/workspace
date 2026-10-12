@@ -32,6 +32,8 @@ npm run dev      # http://localhost:3000
 | `npm run start` | 프로덕션 서버 |
 | `npm run lint` / `lint:fix` | ESLint 검사 / 자동 수정 |
 
+> 개발 서버는 기본적으로 `localhost`만 허용합니다. `127.0.0.1`이나 이 PC의 IP 외에 다른 호스트(터널, 사설 도메인 등)로 접속하면 JS가 로드되지 않아 메뉴·테마 토글이 동작하지 않으니, `next.config.ts`의 `allowedDevOrigins`에 추가하세요.
+
 ## 폴더 구조
 
 ```
